@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "<smart-parkir.database.windows.net>";
-    $user = "<dicoding>";
-    $pass = "<@Qwerty123>";
-    $db = "<Registration>";
+    $host = "smart-parkir.database.windows.net";
+    $user = "dicoding";
+    $pass = "@Qwerty123";
+    $db = "Registration";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);

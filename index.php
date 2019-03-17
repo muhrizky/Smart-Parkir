@@ -40,15 +40,15 @@
 
     if (isset($_POST['submit'])) {
         try {
-            $name = $_POST['name'];
+            $name = $_POST['nama'];
             $nim = $_POST['nim'];
             $npk = $_POST['npk'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO Registration (name, nim, npk, date) 
+            $sql_insert = "INSERT INTO Registration (nama, nim, npk, date) 
                         VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
-            $stmt->bindValue(1, $name);
+            $stmt->bindValue(1, $nama);
             $stmt->bindValue(2, $nim);
             $stmt->bindValue(3, $npk);
             $stmt->bindValue(4, $date);
@@ -71,7 +71,7 @@
                 echo "<th>Nomor Plat Kendaraan</th>";
                 echo "<th>Date</th></tr>";
                 foreach($registrants as $registrant) {
-                    echo "<tr><td>".$registrant['name']."</td>";
+                    echo "<tr><td>".$registrant['nama']."</td>";
                     echo "<td>".$registrant['nim']."</td>";
                     echo "<td>".$registrant['npk']."</td>";
                     echo "<td>".$registrant['date']."</td></tr>";

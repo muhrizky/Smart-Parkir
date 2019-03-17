@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "<smart-parkir.database.windows.net>";
+    $host = "<registration1.database.windows.net>";
     $user = "<dicoding>";
     $pass = "<@Qwerty123>";
-    $db = "smart-parkir";
+    $db = "Registration";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
@@ -45,7 +45,7 @@
             $npk = $_POST['npk'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO smart-parkir (name, nim, npk, date) 
+            $sql_insert = "INSERT INTO Registration (name, nim, npk, date) 
                         VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
@@ -60,7 +60,7 @@
         echo "<h3>Your're registered!</h3>";
     } else if (isset($_POST['load_data'])) {
         try {
-            $sql_select = "SELECT * FROM smart-parkir";
+            $sql_select = "SELECT * FROM Registration";
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {

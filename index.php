@@ -21,7 +21,7 @@
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Nama  <input type="text" name="name" id="name"/></br></br>
        NIM <input type="text" name="nim" id="nim"/></br></br>
-       Nomor Plat Kendaraan <input type="text" name="npk" id="npk"/></br></br>
+       NPK <input type="text" name="npk" id="npk"/></br></br>
        <input type="submit" name="submit" value="Submit" />
        <input type="submit" name="load_data" value="Load Data" />
  </form>
@@ -68,7 +68,7 @@
                 echo "<table>";
                 echo "<tr><th>Name</th>";
                 echo "<th>NIM</th>";
-                echo "<th>Nomor Plat Kendaraan</th>";
+                echo "<th>NPK</th>";
                 echo "<th>Date</th></tr>";
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['nama']."</td>";

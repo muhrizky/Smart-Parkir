@@ -26,9 +26,9 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "<registration1.database.windows.net>";
-    $user = "<dicoding>";
-    $pass = "<@Qwerty123>";
+    $host = "registration1.database.windows.net";
+    $user = "dicoding";
+    $pass = "@Qwerty123";
     $db = "Registration";
 
     try {

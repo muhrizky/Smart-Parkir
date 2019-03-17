@@ -46,9 +46,9 @@
             $date = date("Y-m-d");
             // Insert data
             $sql_insert = "INSERT INTO Registration (nama, nim, npk, date) 
-                        VALUES (?,?,?,?)";
+                        VALUES (1,2,3,4)";
             $stmt = $conn->prepare($sql_insert);
-            $stmt->bindValue(1, $nama);
+            $stmt->bindValue(1, $name);
             $stmt->bindValue(2, $nim);
             $stmt->bindValue(3, $npk);
             $stmt->bindValue(4, $date);

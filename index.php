@@ -52,7 +52,7 @@
             $stmt->bindValue(2, $nim);
             $stmt->bindValue(3, $npk);
             // $stmt->bindValue(4, $date);
-            $stmt->execute();
+            // $stmt->execute();
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }

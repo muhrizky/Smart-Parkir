@@ -46,13 +46,13 @@
             // $date = date("Y-m-d");
             // Insert data
             $sql_insert = "INSERT INTO Registration (nama, nim, npk) 
-                        VALUES (1,2,3,4)";
+                        VALUES (1,2,3)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
             $stmt->bindValue(2, $nim);
             $stmt->bindValue(3, $npk);
             // $stmt->bindValue(4, $date);
-            // $stmt->execute();
+            $stmt->execute();
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }

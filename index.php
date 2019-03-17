@@ -26,9 +26,9 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "smart-parkir.database.windows.net";
-    $user = "dicoding";
-    $pass = "@Qwerty123";
+    $host = "<smart-parkir.database.windows.net>";
+    $user = "<dicoding>";
+    $pass = "<@Qwerty123>";
     $db = "Registration";
 
     try {
@@ -41,11 +41,11 @@
     if (isset($_POST['submit'])) {
         try {
             $name = $_POST['name'];
-            $email = $_POST['nim'];
-            $job = $_POST['npk'];
+            $nim = $_POST['nim'];
+            $npk = $_POST['npk'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO Registration (name, email, job, date) 
+            $sql_insert = "INSERT INTO Registration (name, nim, npk, date) 
                         VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);

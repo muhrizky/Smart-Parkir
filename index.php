@@ -10,25 +10,24 @@
         <h1 class="text-center">Smart Parkir Universitas Diponegoro</h1>
         <form action="index.php" method="POST">
           <div class="form-group">
-            <label for="name">Name:</label>
+            <label for="name">Nama: </label>
             <input type="text" class="form-control" name="nama" id="name" required="" >
         </div>
         <div class="form-group">
-            <label for="email">Nomor Induk Mahasiswa:</label>
+            <label for="email">Nomor Induk Mahasiswa (NIM): </label>
             <input type="text" class="form-control" name="nim" id="nim" required="">
         </div>
         <div class="form-group">
-            <label for="NPK">Nomor Plat Kendaraan:</label>
+            <label for="NPK">Nomor Plat Kendaraan (NPK): </label>
             <input type="text" class="form-control" name="npk" id="npk" required="">
         </div>
-            <input method="POST" type="submit" class="btn btn-default" name="submit" value="Submit">
-            <input method="GET" type="submit" class="btn btn-info" name="load_data" value="Load Data">
+            <input type="submit" class="btn btn-default" name="submit" value="Submit">
         </form>
-        <!-- <form action="index.php" method="GET">
+        <form action="index.php" method="GET">
           <div class="form-group">
-            <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
+            <input type="submit" class="btn btn-info" name="load_data" value="Lihat Data Yang Sudah Registrasi">
           </div>
-        </form>    -->
+        </form>   
    
  <?php
     $host = "registration1.database.windows.net";

@@ -9,6 +9,7 @@
     <div class="starter-template"> <br>
         <h1>Smart Parkir Universitas Diponegoro</h1>
         <p class="lead">Isikan dengan lengkap dari <b>Nama NIM dan TNBK </b> anda.<br> Kemudian Click <b>Submit</b> untuk Registrasi Kendaraan anda.</p> <br>
+        <span class="border-top my-3"></span>
       </div>
         <form action="index.php" method="POST">
           <div class="form-group">
@@ -70,7 +71,7 @@
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
-                echo "<h2>Mahasiswa yang sudah teregistrasi kendaraannya sebanyak : ".count($registrants)."</h2>";
+                echo "<h2>Mahasiswa yang sudah teregistrasi kendaraannya sebanyak : ".count($registrants)." Orang</h2>";
                 echo "<table class='table table-hover'><thead>";
                 echo "<tr><th>Name</th>";
                 echo "<th>NIM</th>";

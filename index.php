@@ -14,12 +14,12 @@
             <input type="text" class="form-control" name="nama" id="name" required="">
         </div>
         <div class="form-group">
-            <label for="email">NIM:</label>
+            <label for="email">Nomor Induk Mahasiswa:</label>
             <input type="text" class="form-control" name="nim" id="nim">
         </div>
         <div class="form-group">
-            <label for="NPK">Job:</label>
-            <input type="text" class="form-control" name="nim" id="nim">
+            <label for="NPK">Nomor Plat Kendaraan:</label>
+            <input type="text" class="form-control" name="npk" id="npk">
         </div>
         <input type="submit" class="btn btn-default" name="submit" value="Submit">
         

@@ -8,7 +8,7 @@
     <div class="container">
     <div class="starter-template">
         <h1>Smart Parkir Universitas Diponegoro</h1>
-        <p class="lead">Isikan dengan lengkap dari <b>Nama NIM dan TNBK </b> anda.<br> Kemudian Click <b>Submit</b> untuk Registrasi Kendaraan anda.</p> <br> <br>
+        <p class="lead">Isikan dengan lengkap dari <b>Nama NIM dan TNBK </b> anda.<br> Kemudian Click <b>Submit</b> untuk Registrasi Kendaraan anda.</p> <br>
       </div>
         <form action="index.php" method="POST">
           <div class="form-group">

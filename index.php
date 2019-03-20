@@ -25,7 +25,7 @@
         </form>
         <form action="index.php" method="GET">
           <div class="form-group">
-            <input type="submit" class="btn btn-default" name="submit" value="Submit">
+            <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
           </div>
         </form>   
    
@@ -62,7 +62,7 @@
         }
 
         echo "<h3>Your're registered!</h3>";
-    } else if (isset($_POST['load_data'])) {
+    } else if (isset($_GET['load_data'])) {
         try {
             $sql_select = "SELECT * FROM Registration";
             $stmt = $conn->query($sql_select);

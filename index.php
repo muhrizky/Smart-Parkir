@@ -7,7 +7,7 @@
 
     <div class="container">
 
-        <h1 class="text-center">Azure Cloud Development!</h1>
+        <h1 class="text-center">Smart Parkir Universitas Diponegoro</h1>
         <form action="index.php" method="POST">
           <div class="form-group">
             <label for="name">Name:</label>
@@ -25,7 +25,8 @@
         
     </form>
     <form>
-    <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
+        <form action="index.php" method="POST">
+            <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
     </form>
  <?php
     $host = "registration1.database.windows.net";

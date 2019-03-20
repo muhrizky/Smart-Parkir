@@ -19,7 +19,7 @@
  <h1>Registeri Parkir Kendaraan Bermotor Fakultas Teknik</h1>
  <p>Isikan Nama, NIM dan nomor palt kendaraan Anda, Kemudian Klik <strong>Submit</strong> Untuk mendaftar.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
-       Nama  <input type="text" name="name" id="name"/></br></br>
+       Nama  <input type="text" name="nama" id="name"/></br></br>
        NIM <input type="text" name="nim" id="nim"/></br></br>
        NPK <input type="text" name="npk" id="npk"/></br></br>
        <input type="submit" name="submit" value="Submit" />
@@ -45,7 +45,7 @@
             $npk = $_POST['npk'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO Registration (name, nim, npk, date) 
+            $sql_insert = "INSERT INTO Registration (nama, nim, npk, date) 
                         VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);

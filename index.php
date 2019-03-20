@@ -11,7 +11,7 @@
         <form action="index.php" method="POST">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" name="nama" id="name" required="">
+            <input type="text" class="form-control" name="nama" id="name" >
         </div>
         <div class="form-group">
             <label for="email">Nomor Induk Mahasiswa:</label>
@@ -22,12 +22,12 @@
             <input type="text" class="form-control" name="npk" id="npk">
         </div>
         <input type="submit" class="btn btn-default" name="submit" value="Submit">
-        
+        <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
     </form>
-    <form>
-        <form action="index.php" method="POST">
-            <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
-    </form>
+  
+    
+            
+   
  <?php
     $host = "registration1.database.windows.net";
     $user = "dicoding";

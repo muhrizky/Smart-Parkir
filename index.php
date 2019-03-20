@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
         $job = $_POST['job'];
         $date = date("Y-m-d");
             // Insert data
-        $sql_insert = "INSERT INTO persons (name, email, job, date) 
+        $sql_insert = "INSERT INTO Registration (name, email, job, date) 
         VALUES (?,?,?,?)";
         $stmt = $conn->prepare($sql_insert);
         $stmt->bindValue(1, $name);
@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
     <br>
     <?php
     try {
-        $sql_select = "SELECT * FROM persons";
+        $sql_select = "SELECT * FROM Registration";
         $stmt = $conn->query($sql_select);
         $persons = $stmt->fetchAll(); 
         if(count($persons) > 0) {

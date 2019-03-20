@@ -22,7 +22,7 @@
             <input type="text" class="form-control" name="nim" id="nim">
         </div>
         <input type="submit" class="btn btn-default" name="submit" value="Submit">
-        <input type="submit" class="btn btn-default" name="load_data" value="Load Data">
+        
     </form>
  <?php
     $host = "registration1.database.windows.net";
@@ -63,19 +63,19 @@
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
-                echo "<h2>Mahasiswa Yang sudah Tergistrasi Kendarrannya:</h2>";
-                echo "<table>";
+                echo "<h2>Mahasiswa Yang sudah Tergistrasi Kendarrannya:".count($registrants)."</h2>";
+                echo "<table class='table table-hover'><thead>";
                 echo "<tr><th>Name</th>";
                 echo "<th>NIM</th>";
                 echo "<th>NPK</th>";
-                echo "<th>Date</th></tr>";
+                echo "<th>Date</th></tr></thead><tbody>";
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['nama']."</td>";
                     echo "<td>".$registrant['nim']."</td>";
                     echo "<td>".$registrant['npk']."</td>";
                     echo "<td>".$registrant['date']."</td></tr>";
                 }
-                echo "</table>";
+                echo "</tbody></table>";
             } else {
                 echo "<h3>No one is currently registered.</h3>";
             }
@@ -84,5 +84,9 @@
         }
     }
  ?>
+ </div>
+
+</tbody>
+</table>
  </body>
  </html>

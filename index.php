@@ -11,15 +11,15 @@
         <form action="index.php" method="POST">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" name="nama" id="name" >
+            <input type="text" class="form-control" name="nama" id="name" required="" >
         </div>
         <div class="form-group">
             <label for="email">Nomor Induk Mahasiswa:</label>
-            <input type="text" class="form-control" name="nim" id="nim">
+            <input type="text" class="form-control" name="nim" id="nim" required="">
         </div>
         <div class="form-group">
             <label for="NPK">Nomor Plat Kendaraan:</label>
-            <input type="text" class="form-control" name="npk" id="npk">
+            <input type="text" class="form-control" name="npk" id="npk" required="">
         </div>
         <div class="form-group">
         <input type="submit" class="btn btn-default" name="submit" value="Submit">

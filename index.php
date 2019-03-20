@@ -1,6 +1,6 @@
 <html>
  <head>
- <Title>Undip Smart Parking</Title>
+ <Title>USP</Title>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
  </head>
  <body>
@@ -68,7 +68,7 @@
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
-                echo "<h2>Mahasiswa Yang sudah Tergistrasi Kendarrannya ada : ".count($registrants)."</h2>";
+                echo "<h2>Mahasiswa yang sudah teregistrasi kendaraannya sebanyak : ".count($registrants)."</h2>";
                 echo "<table class='table table-hover'><thead>";
                 echo "<tr><th>Name</th>";
                 echo "<th>NIM</th>";

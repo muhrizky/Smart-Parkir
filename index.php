@@ -1,32 +1,18 @@
 <html>
  <head>
-    <title>Rizqi AZURE!</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-
-    <div class="container">
-
-        <h1 class="text-center">Azure Cloud Development!</h1>
-        <form action="index.php" method="POST">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" name="name" id="name" required="">
-        </div>
-        <div class="form-group">
-            <label for="email">NIM:</label>
-            <input type="email" class="form-control" name="nim" id="nim">
-        </div>
-        <div class="form-group">
-            <label for="job">NPK:</label>
-            <input type="text" class="form-control" name="npk" id="npk">
-        </div>
-        <input type="submit" class="btn btn-default" name="submit" value="Submit">
-    </form>
-
-    <br>
-    <br>
+ <Title>Parkir Kendaraan Bermotor</Title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ </head>
+ <body>
+ <h1>Registeri Parkir Kendaraan Bermotor Fakultas Teknik</h1>
+ <p>Isikan Nama, NIM dan nomor palt kendaraan Anda, Kemudian Klik <strong>Submit</strong> Untuk mendaftar.</p>
+ <form method="post" action="index.php" enctype="multipart/form-data" >
+       Nama  <input type="text" name="name" id="name"/></br></br>
+       NIM <input type="text" name="nim" id="nim"/></br></br>
+       NPK <input type="text" name="npk" id="npk"/></br></br>
+       <input type="submit" name="submit" value="Submit" />
+       <input type="submit" name="load_data" value="Load Data" />
+ </form>
  <?php
     $host = "registration1.database.windows.net";
     $user = "dicoding";

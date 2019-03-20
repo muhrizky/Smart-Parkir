@@ -22,7 +22,7 @@
             <input type="text" class="form-control" name="npk" id="npk">
         </div>
         <input type="submit" class="btn btn-default" name="submit" value="Submit">
-        
+        <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
     </form>
  <?php
     $host = "registration1.database.windows.net";

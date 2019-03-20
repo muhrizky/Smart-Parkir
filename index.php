@@ -21,16 +21,13 @@
             <label for="NPK">Nomor Plat Kendaraan:</label>
             <input type="text" class="form-control" name="npk" id="npk" required="">
         </div>
-        <div class="form-group">
-        <input type="submit" class="btn btn-default" name="submit" value="Submit">
-        </div>
-        <div>
-        <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
-        </div>
-    </form>
-  
-    
-            
+            <input type="submit" class="btn btn-default" name="submit" value="Submit">
+        </form>
+        <form action="index.php" method="GET">
+          <div class="form-group">
+            <input type="submit" class="btn btn-default" name="submit" value="Submit">
+          </div>
+        </form>   
    
  <?php
     $host = "registration1.database.windows.net";

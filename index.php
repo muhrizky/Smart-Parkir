@@ -1,6 +1,6 @@
 <html>
  <head>
- <Title>Parkir Kendaraan Bermotor</Title>
+ <Title>Undip Smart Parking</Title>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
  </head>
  <body>
@@ -15,13 +15,13 @@
         </div>
         <div class="form-group">
             <label for="email">Nomor Induk Mahasiswa (NIM): </label>
-            <input type="text" class="form-control" name="nim" id="nim" required="">
+            <input type="text" class="form-control" name="nim" id="nim" required=""maxlength="15">
         </div>
         <div class="form-group">
-            <label for="NPK">Nomor Plat Kendaraan (NPK): </label>
-            <input type="text" class="form-control" name="npk" id="npk" required="">
+            <label for="NPK">Tanda Nomor Kendaraan Bermotor (TKNB): </label>
+            <input type="text" class="form-control" name="npk" id="npk" required=""maxlength="8">
         </div>
-            <input type="submit" class="btn btn-default" name="submit" value="Submit">
+            <input type="submit" class="btn btn-success" name="submit" value="Submit">
         </form>
         <form action="index.php" method="GET">
           <div class="form-group">
@@ -72,7 +72,7 @@
                 echo "<table class='table table-hover'><thead>";
                 echo "<tr><th>Name</th>";
                 echo "<th>NIM</th>";
-                echo "<th>NPK</th>";
+                echo "<th>TKNB</th>";
                 echo "<th>Date</th></tr></thead><tbody>";
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['nama']."</td>";

@@ -21,8 +21,12 @@
             <label for="NPK">Nomor Plat Kendaraan:</label>
             <input type="text" class="form-control" name="npk" id="npk">
         </div>
+        <div class="form-group">
         <input type="submit" class="btn btn-default" name="submit" value="Submit">
+        </div>
+        <div class="form-group">
         <input type="submit" class="btn btn-info" name="load_data" value="Load Data">
+        </div>
     </form>
   
     

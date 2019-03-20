@@ -1,30 +1,29 @@
 <html>
  <head>
  <Title>Parkir Kendaraan Bermotor</Title>
- <style type="text/css">
- 	body { background-color: #fff; border-top: solid 10px #000;
- 	    color: #333; font-size: .85em; margin: 20; padding: 20;
- 	    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
- 	}
- 	h1, h2, h3,{ color: #000; margin-bottom: 0; padding-bottom: 0; }
- 	h1 { font-size: 2em; }
- 	h2 { font-size: 1.75em; }
- 	h3 { font-size: 1.2em; }
- 	table { margin-top: 0.75em; }
- 	th { font-size: 1.2em; text-align: left; border: none; padding-left: 0; }
- 	td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
- </style>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
  </head>
  <body>
- <h1>Registeri Parkir Kendaraan Bermotor Fakultas Teknik</h1>
- <p>Isikan Nama, NIM dan nomor palt kendaraan Anda, Kemudian Klik <strong>Submit</strong> Untuk mendaftar.</p>
- <form method="post" action="index.php" enctype="multipart/form-data" >
-       Nama  <input type="text" name="nama" id="name"/></br></br>
-       NIM <input type="text" name="nim" id="nim"/></br></br>
-       NPK <input type="text" name="npk" id="npk"/></br></br>
-       <input type="submit" name="submit" value="Submit" />
-       <input type="submit" name="load_data" value="Load Data" />
- </form>
+
+    <div class="container">
+
+        <h1 class="text-center">Azure Cloud Development!</h1>
+        <form action="index.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" name="nama" id="name" required="">
+        </div>
+        <div class="form-group">
+            <label for="email">NIM:</label>
+            <input type="text" class="form-control" name="nim" id="nim">
+        </div>
+        <div class="form-group">
+            <label for="NPK">Job:</label>
+            <input type="text" class="form-control" name="nim" id="nim">
+        </div>
+        <input type="submit" class="btn btn-default" name="submit" value="Submit">
+        <input type="submit" class="btn btn-default" name="load_data" value="Load Data">
+    </form>
  <?php
     $host = "registration1.database.windows.net";
     $user = "dicoding";

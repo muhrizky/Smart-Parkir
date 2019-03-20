@@ -3,5 +3,5 @@ create table [dbo].[Registration](
     nama VARCHAR(50),
     nim VARCHAR(50),
     npk VARCHAR(50),
-    -- date DATE
+    date DATE
 );

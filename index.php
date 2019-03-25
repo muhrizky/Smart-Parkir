@@ -6,7 +6,7 @@
     <meta name="author" content="">
     <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Undip Smart Parkir</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -18,18 +18,13 @@
   </head>
  <body>
  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">USP</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Unggah Foto Kendaraan/a>
+            <a class="nav-link" href="#">Unggah Foto Kendaraan </a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Analisis Kendaraan</a>
@@ -124,6 +119,7 @@
         }
     }
  ?>
+ </div>
     </main><!-- /.container -->
 
 </tbody>

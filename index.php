@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="https://raw.githubusercontent.com/muhrizky/Smart-Parkir/master/parking-sign_icon-icons.com_72642.ico">
 
     <title>Undip Smart Parkir</title>
 
@@ -27,7 +27,7 @@
             <a class="nav-link" href="#">Unggah Foto Kendaraan </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Analisis Kendaraan</a>
+            <a class="nav-link" href="#">Analisis Kendaraan</a>
           </li>
       </div>
     </nav>

@@ -1,9 +1,18 @@
-<!--  -->
-
+<?php
+if (isset($_POST['submit'])) {
+	if (isset($_POST['url'])) {
+		$url = $_POST['url'];
+	} else {
+		header("Location: analyze.php");
+	}
+} else {
+	header("Location: analyze.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MACD Submission 2!</title>
+	<title>Result Analyze</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </head>
 <body>
@@ -63,7 +72,7 @@
     });
 </script>
 
-<h1>Analyze image:</h1>
+<h1>Hasil Analisis Foto Kendaraan</h1>
 <div id="wrapper" style="width:1020px; display:table;">
 	<div id="jsonOutput" style="width:600px; display:table-cell;">
 		Response:

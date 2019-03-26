@@ -47,28 +47,7 @@ if (isset($_POST['submit'])) {
 		</div>
 		</nav>
 
-    <main role="main" class="container">
-        <div class="starter-template"> <br><br><br>
-        	<h1>Analisis Kendaraan</h1>
-			    <p class="lead">Pilih Foto Kendaraan Anda.<br> Kemudian Click <b>Upload</b> Untuk menganlisa foto pilih analyze pada tabel.</p>
-				<span class="border-top my-3"></span>
-			</div>
-<div id="wrapper" style="width:1020px; display:table;">
-	<div id="jsonOutput" style="width:600px; display:table-cell;">
-		Response:
-		<br><br>
-		<textarea id="responseTextArea" class="UIInput"
-		style="width:580px; height:400px;" readonly=""></textarea>
-	</div>
-	<div id="imageDiv" style="width:420px; display:table-cell;">
-		Source image:
-		<br><br>
-		<img id="sourceImage" width="400" />
-		<br>
-		<h3 id="description">Loading description. . .</h3>
-	</div>
-</div>
-<script type="text/javascript">
+	<script type="text/javascript">
 		$(document).ready(function () {
         // **********************************************
         // *** Update or verify the following values. ***
@@ -123,6 +102,23 @@ if (isset($_POST['submit'])) {
         });
     });
 </script>
+
+<h1>Analyze image:</h1>
+<div id="wrapper" style="width:1020px; display:table;">
+	<div id="jsonOutput" style="width:600px; display:table-cell;">
+		Response:
+		<br><br>
+		<textarea id="responseTextArea" class="UIInput"
+		style="width:580px; height:400px;" readonly=""></textarea>
+	</div>
+	<div id="imageDiv" style="width:420px; display:table-cell;">
+		Source image:
+		<br><br>
+		<img id="sourceImage" width="400" />
+		<br>
+		<h3 id="description">Loading description. . .</h3>
+	</div>
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>

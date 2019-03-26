@@ -27,7 +27,7 @@
             <a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Unggah Foto Kendaraan </a>
+            <a class="nav-link" href="#">List Kendaraan</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Analisis Kendaraan</a>
@@ -54,11 +54,10 @@
             <label for="NPK">Tanda Nomor Kendaraan Bermotor (TKNB): </label>
             <input type="text" class="form-control" name="npk" id="npk" required=""maxlength="8">
         </div>
+        <div class="form-group" action="index.php" method="post" enctype="multipart/form-data">
+            <label for="upload">Unggah Foto Kendaraan : </label>
+            <input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
             <input type="submit" class="btn btn-success" name="submit" value="Submit">
-        <div class="d-flex justify-content-center" action="index.php" method="post" enctype="multipart/form-data">
-				<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
-				<input type="submit" name="submit" value="Upload">
-		</div>
         </form>
         <form action="index.php" method="GET">
           <div class="form-group">

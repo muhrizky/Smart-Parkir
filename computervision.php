@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
 		<main role="main" class="container">
     		<div class="starter-template"> <br><br><br>
         		<h1>Analisis Kendaraan</h1>
-				<p class="lead">Berikut Merupakan Hasil Analisis.<br> Mobil Anda<b>Upload</b> Karakteristik Foto kendaraan ada pada kolom Response.</p>
+				<p class="lead">Berikut merupakan hasil analisis kendaraan yang <b>Anda</b> Upload <br> Karakteristik Foto kendaraan ada pada kolom Response.</p>
 				<span class="border-top my-3"></span>
 			</div>
         <script type="text/javascript">
@@ -107,7 +107,7 @@ if (isset($_POST['submit'])) {
             });
         });
     </script>
-
+<br>
 <div id="wrapper" style="width:1020px; display:table;">
 	<div id="jsonOutput" style="width:600px; display:table-cell;">
 		Response:

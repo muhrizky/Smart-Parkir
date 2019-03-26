@@ -54,10 +54,10 @@
             <label for="NPK">Tanda Nomor Kendaraan Bermotor (TKNB): </label>
             <input type="text" class="form-control" name="npk" id="npk" required=""maxlength="8">
         </div>
-        <div class="form-group" action="index.php" method="post" enctype="multipart/form-data">
+        <!-- <div class="form-group" action="index.php" method="post" enctype="multipart/form-data">
             <label for="upload">Unggah Foto Kendaraan : </label> <br>
             <input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
-            <br><br>
+            <br><br> -->
             <input type="submit" class="btn btn-success" name="submit" value="Submit Data Kendaraan">
         </form>
         <br><br>

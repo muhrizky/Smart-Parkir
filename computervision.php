@@ -110,13 +110,13 @@ if (isset($_POST['submit'])) {
 <br>
 <div id="wrapper" style="width:1020px; display:table;">
 	<div id="jsonOutput" style="width:600px; display:table-cell;">
-		Response:
+		<b>Response:</b>
 		<br><br>
 		<textarea id="responseTextArea" class="UIInput"
 		style="width:580px; height:400px;" readonly=""></textarea>
 	</div>
 	<div id="imageDiv" style="width:420px; display:table-cell;">
-		Source image:
+		<b>Source Image:</b>
 		<br><br>
 		<img id="sourceImage" width="400" />
 		<br>

@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 	$content = fopen($_FILES["fileToUpload"]["tmp_name"], "r");
 	// echo fread($content, filesize($fileToUpload));
 	$blobClient->createBlockBlob($containerName, $fileToUpload, $content);
-	header("Location: index.php");
+	header("Location: analyze.php");
 }
 $listBlobsOptions = new ListBlobsOptions();
 $listBlobsOptions->setPrefix("");
@@ -25,17 +25,17 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MACD Submission 2!</title>
+	<title>Analisis Kendaraan</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container mt-4">
 
-		<h1 class="text-center">Azure Cloud Development!</h1>
+		<h1 class="text-center">Analisis Kendaraan</h1>
 		
 		<div class="mt-4 mb-2">
-			<form class="d-flex justify-content-center" action="index.php" method="post" enctype="multipart/form-data">
+			<form class="d-flex justify-content-center" action="analyze.php" method="post" enctype="multipart/form-data">
 				<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
 				<input type="submit" name="submit" value="Upload">
 			</form>
@@ -60,7 +60,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 							<td><?php echo $blob->getName() ?></td>
 							<td><?php echo $blob->getUrl() ?></td>
 							<td>
-								<form action="analyze.php" method="post">
+								<form action="computervision.php" method="post">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
 									<input type="submit" name="submit" value="Analyze!" class="btn btn-primary">
 								</form>

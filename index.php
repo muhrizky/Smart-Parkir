@@ -27,10 +27,7 @@
             <a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">List Kendaraan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Analisis Kendaraan</a>
+            <a class="nav-link" href="https://smart-parkir.azurewebsites.net/analyze.php">Analisis Kendaraan</a>
           </li>
       </div>
     </nav>
@@ -60,7 +57,7 @@
             <br><br> -->
             <input type="submit" class="btn btn-success" name="submit" value="Submit Data Kendaraan">
         </form>
-        <br><br>
+        <!-- <br><br> -->
         <form action="index.php" method="GET">
           <div class="form-group">
             <input type="submit" class="btn btn-info" name="load_data" value="Lihat Data Yang Sudah Registrasi">

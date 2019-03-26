@@ -60,7 +60,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		<main role="main" class="container">
     		<div class="starter-template"> <br><br><br>
         		<h1>Analisis Kendaraan</h1>
-				<p class="lead">Pilih Foto Kendaraan Anda.<br> Kemudian Click <b>Upload</b>Untuk menganlisa foto pilih analyze pada tabel.</p>
+				<p class="lead">Pilih Foto Kendaraan Anda.<br> Kemudian Click <b>Upload</b> Untuk menganlisa foto pilih analyze pada tabel.</p>
 				<span class="border-top my-3"></span>
 			</div>
 		<div class="mt-4 mb-2">
@@ -69,6 +69,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 				<input type="submit" name="submit" value="Upload">
 			</form>
 		</div>
+		<br>
 		<br>
 		<h4>Total Files : <?php echo sizeof($result->getBlobs())?></h4>
 		<table class='table table-hover'>

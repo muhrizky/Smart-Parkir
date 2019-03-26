@@ -23,7 +23,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav navbar-right nav">
+        <ul class="form-inline my-2 my-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home <span class="sr-only">(current)</span></a>
           </li>

@@ -55,8 +55,9 @@
             <input type="text" class="form-control" name="npk" id="npk" required=""maxlength="8">
         </div>
         <div class="form-group" action="index.php" method="post" enctype="multipart/form-data">
-            <label for="upload">Unggah Foto Kendaraan : </label>
+            <label for="upload">Unggah Foto Kendaraan : </label> <br>
             <input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
+            <br>
             <input type="submit" class="btn btn-success" name="submit" value="Submit">
         </form>
         <form action="index.php" method="GET">

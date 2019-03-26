@@ -108,7 +108,7 @@ if (isset($_POST['submit'])) {
         });
     </script>
 
-<!-- <h1>Analyze image:</h1> -->
+<h1>Analyze image:</h1>
 <div id="wrapper" style="width:1020px; display:table;">
 	<div id="jsonOutput" style="width:600px; display:table-cell;">
 		Response:
@@ -124,10 +124,5 @@ if (isset($_POST['submit'])) {
 		<h3 id="description">Loading description. . .</h3>
 	</div>
 </div>
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>

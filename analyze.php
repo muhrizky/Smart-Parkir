@@ -49,10 +49,10 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		</button>
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
+			<li class="nav-item">
 				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item active">
 				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/analyze.php">Analisis Kendaraan<span class="sr-only">(current)</span></a>
 			</li>
 		</div>
@@ -60,7 +60,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		<main role="main" class="container">
     		<div class="starter-template"> <br><br><br>
         		<h1>Analisis Kendaraan</h1>
-				<p class="lead">Pilih Foto Kendaraan Anda. Kemudian Click <b>Upload</b> <br>Untuk menganlisa foto pilih analyze pada tabel.</p>
+				<p class="lead">Pilih Foto Kendaraan Anda.<br> Kemudian Click <b>Upload</b>Untuk menganlisa foto pilih analyze pada tabel.</p>
 				<span class="border-top my-3"></span>
 			</div>
 		<div class="mt-4 mb-2">

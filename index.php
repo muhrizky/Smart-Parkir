@@ -18,6 +18,9 @@
   </head>
  <body>
  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -52,6 +55,10 @@
             <input type="text" class="form-control" name="npk" id="npk" required=""maxlength="8">
         </div>
             <input type="submit" class="btn btn-success" name="submit" value="Submit">
+        <div class="d-flex justify-content-center" action="index.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
+				<input type="submit" name="submit" value="Upload">
+		</div>
         </form>
         <form action="index.php" method="GET">
           <div class="form-group">

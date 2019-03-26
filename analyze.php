@@ -50,24 +50,28 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/analyze.php">Analisis Kendaraan</a>
+				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/analyze.php">Analisis Kendaraan<span class="sr-only">(current)</span></a>
 			</li>
 		</div>
 		</nav>
 		<main role="main" class="container">
     		<div class="starter-template"> <br><br><br>
         		<h1>Analisis Kendaraan</h1>
+				<p class="lead">Pilih Foto Kendaraan Anda. <br> Kemudian Click <b>Upload</b> untuk menganlisa foto pilih analyze pada tabel.</p> <br>
 				<span class="border-top my-3"></span>
 			</div>
 		<div class="mt-4 mb-2">
-			<form class="d-flex justify-content-center" action="analyze.php" method="post" enctype="multipart/form-data">
+			<form class="d-flex justify-content-lefr" action="analyze.php" method="post" enctype="multipart/form-data">
 				<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
 				<input type="submit" name="submit" value="Upload">
 			</form>
 		</div>
+		<br>
+		<br>
+	
 
 		<h2>Total Files : <?php echo sizeof($result->getBlobs())?></h2>
 		<table class='table table-hover'>

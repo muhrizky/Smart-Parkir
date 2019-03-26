@@ -57,9 +57,10 @@
         <div class="form-group" action="index.php" method="post" enctype="multipart/form-data">
             <label for="upload">Unggah Foto Kendaraan : </label> <br>
             <input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
-            <br>
-            <input type="submit" class="btn btn-success" name="submit" value="Submit">
+            <br><br>
+            <input type="submit" class="btn btn-success" name="submit" value="Submit Data">
         </form>
+        <br><br>
         <form action="index.php" method="GET">
           <div class="form-group">
             <input type="submit" class="btn btn-info" name="load_data" value="Lihat Data Yang Sudah Registrasi">

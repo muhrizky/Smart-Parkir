@@ -38,7 +38,7 @@
     <main role="main" class="container">
     <div class="starter-template"> <br><br><br>
         <h1>Smart Parkir Universitas Diponegoro</h1>
-        <p class="lead">Isikan dengan lengkap dari <b>Nama NIM dan TNBK </b> anda.<br> Kemudian Click <b>Submit</b> untuk Registrasi Kendaraan anda.</p> <br>
+        <p class="lead">Isikan dengan lengkap dari <b>Nama, NIM, TNBK, Foto Kendaraan </b> anda.<br> Kemudian Click <b>Submit Data Kendaraan</b> untuk Registrasi Kendaraan anda.</p> <br>
         <span class="border-top my-3"></span>
       </div>
         <form action="index.php" method="POST">
@@ -58,7 +58,7 @@
             <label for="upload">Unggah Foto Kendaraan : </label> <br>
             <input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
             <br><br>
-            <input type="submit" class="btn btn-success" name="submit" value="Submit Data">
+            <input type="submit" class="btn btn-success" name="submit" value="Submit Data Kendaraan">
         </form>
         <br><br>
         <form action="index.php" method="GET">

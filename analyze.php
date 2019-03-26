@@ -24,16 +24,44 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Analisis Kendaraan</title>
+<html>
+ <head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://raw.githubusercontent.com/muhrizky/Smart-Parkir/master/parking_meter__2__Mrq_icon.ico">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
+    <title>Undip Smart Parkir</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
 <body>
-	<div class="container mt-4">
-
-		<h1 class="text-center">Analisis Kendaraan</h1>
-		
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/analyze.php">Analisis Kendaraan</a>
+			</li>
+		</div>
+		</nav>
+		<main role="main" class="container">
+    		<div class="starter-template"> <br><br><br>
+        		<h1>Analisis Kendaraan</h1>
+				<span class="border-top my-3"></span>
+			</div>
 		<div class="mt-4 mb-2">
 			<form class="d-flex justify-content-center" action="analyze.php" method="post" enctype="multipart/form-data">
 				<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
@@ -75,5 +103,11 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		</table>
 
 	</div>
-</body>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

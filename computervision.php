@@ -12,12 +12,63 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Submission 2!</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</head>
+<html>
+ <head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://raw.githubusercontent.com/muhrizky/Smart-Parkir/master/parking_meter__2__Mrq_icon.ico">
+
+    <title>Undip Smart Parkir</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
 <body>
-	<script type="text/javascript">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/analyze.php">Analisis Kendaraan<span class="sr-only">(current)</span></a>
+			</li>
+		</div>
+		</nav>
+
+    <main role="main" class="container">
+        <div class="starter-template"> <br><br><br>
+        	<h1>Analisis Kendaraan</h1>
+			    <p class="lead">Pilih Foto Kendaraan Anda.<br> Kemudian Click <b>Upload</b> Untuk menganlisa foto pilih analyze pada tabel.</p>
+				<span class="border-top my-3"></span>
+			</div>
+<div id="wrapper" style="width:1020px; display:table;">
+	<div id="jsonOutput" style="width:600px; display:table-cell;">
+		Response:
+		<br><br>
+		<textarea id="responseTextArea" class="UIInput"
+		style="width:580px; height:400px;" readonly=""></textarea>
+	</div>
+	<div id="imageDiv" style="width:420px; display:table-cell;">
+		Source image:
+		<br><br>
+		<img id="sourceImage" width="400" />
+		<br>
+		<h3 id="description">Loading description. . .</h3>
+	</div>
+</div>
+<script type="text/javascript">
 		$(document).ready(function () {
         // **********************************************
         // *** Update or verify the following values. ***
@@ -72,22 +123,9 @@ if (isset($_POST['submit'])) {
         });
     });
 </script>
-
-<h1>Analyze image:</h1>
-<div id="wrapper" style="width:1020px; display:table;">
-	<div id="jsonOutput" style="width:600px; display:table-cell;">
-		Response:
-		<br><br>
-		<textarea id="responseTextArea" class="UIInput"
-		style="width:580px; height:400px;" readonly=""></textarea>
-	</div>
-	<div id="imageDiv" style="width:420px; display:table-cell;">
-		Source image:
-		<br><br>
-		<img id="sourceImage" width="400" />
-		<br>
-		<h3 id="description">Loading description. . .</h3>
-	</div>
-</div>
-</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
